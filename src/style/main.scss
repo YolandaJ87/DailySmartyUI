@@ -22,7 +22,22 @@ body {
 }
 
 .app {
+    height: 100vh;
     margin-top: 2rem;
     display: grid;
     justify-items: center;
+    align-content: space-around;
+}
+
+.logo-main {
+    img {
+        width: 105px;
+        height: 105px;
+    }
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
 }
