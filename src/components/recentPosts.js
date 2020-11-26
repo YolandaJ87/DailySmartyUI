@@ -2,22 +2,25 @@ import React, { Component } from 'react';
 import { connect } from "react-redux";
 import * as actions from "../actions";
 
+import Post from './post';
+
+
 class RecentPosts extends Component{
     componentDidMount(){
         this.props.fetchRecentPosts();
     }
 
-    renderPosts = function (){
-        const posts = this.props.recentPosts.map((post, index)=>{
-            return (
-                if (index < 3){
+    renderPosts = function() {
+        const posts = this.props.recentPosts.map((post, index) => {
+            if(index < 3) {
+                return (
                     <li key={index}>
                         {post.title}
                     </li>
-                }
-            );
+                )   
+            }
         })
-        return posts;
+        return posts
     }
 
     render (){
@@ -36,10 +39,10 @@ class RecentPosts extends Component{
     }
 }
 
-function mapStateToProps(state){
+function mapStateToProps(state) {
     return {
-        recenPosts: state.posts.recenPosts
+        recentPosts: state.posts.recentPosts
     }
 }
 
-export default connect(mapStateToProps, actions)(RecentPosts);
+export default connect(mapStateToProps, actions)(RecentPosts); 
