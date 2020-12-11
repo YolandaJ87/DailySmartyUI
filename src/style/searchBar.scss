@@ -8,7 +8,7 @@
 
     .search-bar_wrapper{
         input{
-            width: 250px;
+            width: 50vw;
             height: 118px;
             padding-left: 35px;
             color: #666666;
@@ -20,6 +20,8 @@
     
             &::placeholder{
                 color: #b3b3b3;
+                font-family: 'Font Awesome\ 5 Free', 'Lato', Arial, Helvetica, sans-serif;
+                font-weight: 600;
             }
         
             &:focus{

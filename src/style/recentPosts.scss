@@ -1,0 +1,22 @@
+.recent-posts{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+    .recent-posts_wrapper{
+        display: grid;
+        row-gap: 21px;
+        width: 100%;
+        
+        .recent-posts_heading{
+            color: #0079FF;
+            font-size: 14px;
+        }     
+        .recent-posts_posts{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: space-evenly;
+            gap: 42px;
+        }
+    }
+}

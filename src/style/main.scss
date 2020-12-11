@@ -22,7 +22,7 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 .app-wrapper{
-    background-color: skyblue;
+    // background-color: skyblue;
     display: grid;
     justify-content: center;    
 }
@@ -30,30 +30,27 @@ body {
     height: 100vh;
     width: 66vw; 
     //para que ocupe el 66% de la parte visible de la página
-    // margin-top: 2rem;
     display: grid;
-    justify-items: center;
+    // justify-items: stretch;
     align-content: space-around;
 }
 
 .logo-main {
-    // display: grid;
-    // justify-content: center;
-    // align-items: center;
-    // implantado en el logo.js
+    display: grid;
+    justify-content: center;
+    implantado en el logo.js
     img {
         width: 105px;
         height: 105px;
     }
 }
 
-.recent-posts_posts{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-around;
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
-.post-topic{
-    margin: 0.4px;
-}
+
 @import './searchBar';
+@import './recentPosts';
