@@ -8,33 +8,43 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-    font-family: 'montserrat';
+    // font-family: 'montserrat';
 }
 
 body {
     overflow-x: hidden;
     font-weight: normal;
+    font-family: 'Lato', sans-serif;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     -webkit-tap-highlight-color: transparent;
 }
-
-.app {
+.app-wrapper{
+    background-color: skyblue;
+    display: grid;
+    justify-content: center;    
+}
+.app { 
     height: 100vh;
-    margin-top: 2rem;
+    width: 66vw; 
+    //para que ocupe el 66% de la parte visible de la página
+    // margin-top: 2rem;
     display: grid;
     justify-items: center;
     align-content: space-around;
 }
 
 .logo-main {
+    // display: grid;
+    // justify-content: center;
+    // align-items: center;
     // implantado en el logo.js
-    // img {
-    //     width: 105px;
-    //     height: 105px;
-    // }
+    img {
+        width: 105px;
+        height: 105px;
+    }
 }
 
 .recent-posts_posts{
@@ -46,3 +56,4 @@ body {
 .post-topic{
     margin: 0.4px;
 }
+@import './searchBar';
