@@ -1,0 +1,8 @@
+.app { 
+    height: 100vh;
+    width: 66vw; 
+    //para que ocupe el 66% de la parte visible de la página
+    display: grid;
+    // justify-items: stretch;
+    align-content: space-around;
+}

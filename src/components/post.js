@@ -18,8 +18,8 @@ class Post extends Component {
         let links = this.props.post_links.map((post_link, index) => {
             return (
                 <div className="post-link" key={index}>
-                    <div className="post-link__box"></div>
-                    <div className="post-link__link">
+                    <div className="post-link_box"></div>
+                    <div className="post-link_link">
                         <a href={post_link.link_url}>Useful Link #{index + 1}</a>
                     </div>
                 </div>
@@ -34,22 +34,22 @@ class Post extends Component {
                     <div className="recent-post_title">
                         {this.props.title}
                     </div>
-                    <div className="recent-post__topics">
+                    <div className="recent-post_topics">
                         {this.renderTopics()}
                     </div>
                 </li>
             )
         }else{
             return(
-                <li className="results-posts">
-                    <div className="result-posts__topics">
+                <li className="results-posts"
+                    onMouseEnter={() => this.setState({ height: 70 })}
+                    onMouseLeave={() => this.setState({ height: 0 })}
+                >
+                    <div className="result-posts_topics">
                         {this.renderTopics()}
                     </div>
-                    <div className="result-post__title">
-                        <a href={this.props.url_for_post}
-                            onMouseEnter={() => this.setState({ height: 70 })}
-                            onMouseLeave={() => this.setState({ height: 0 })}
-                        >
+                    <div className="result-post_title">
+                        <a href={this.props.url_for_post}>
                             {this.props.title}
                         </a>
                     </div>
@@ -57,7 +57,7 @@ class Post extends Component {
                         duration={500}
                         height={this.state.height}
                     >
-                        <div className="result-posts__links">
+                        <div className="result-posts_links">
                             {this.renderLinks()}
                         </div>
                     </AnimateHeight>                
