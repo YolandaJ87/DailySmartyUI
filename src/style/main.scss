@@ -43,6 +43,14 @@ ul{
     list-style-type: none;
 }
 
+.no-content{
+    color: #666666;
+    font-size: 14px;
+    line-height: 17px;
+}
+a{
+    text-decoration-line: none;   
+}
 @import './home';
 @import './searchBar';
 @import './recentPosts';
