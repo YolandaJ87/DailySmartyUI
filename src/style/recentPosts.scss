@@ -14,9 +14,11 @@
         }     
         .recent-posts_posts{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
             justify-content: space-evenly;
             gap: 42px;
+            @media screen and (min-width: 700px){
+                grid-template-columns: 1fr 1fr 1fr;
+            }
         }
     }
 }
